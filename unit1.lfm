@@ -4,5 +4,15 @@ object Form1: TForm1
   Top = 237
   Width = 320
   Caption = 'App redes'
+  ClientHeight = 287
+  ClientWidth = 320
   LCLVersion = '1.4.2.0'
+  object Button1: TButton
+    Left = 84
+    Height = 62
+    Top = 57
+    Width = 190
+    Caption = 'Button1'
+    TabOrder = 0
+  end
 end
