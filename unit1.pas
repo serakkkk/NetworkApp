@@ -20,7 +20,7 @@ type
     Image1: TImage;
     Label1: TLabel;
     Label2: TLabel;
-    procedure Image1Click(Sender: TObject);
+
   private
     { private declarations }
   public
