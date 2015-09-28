@@ -5,7 +5,8 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  ExtCtrls;
 
 type
 
@@ -13,6 +14,13 @@ type
 
   TForm1 = class(TForm)
     Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Image1: TImage;
+    Label1: TLabel;
+    Label2: TLabel;
+    procedure Image1Click(Sender: TObject);
   private
     { private declarations }
   public
@@ -25,6 +33,10 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TForm1 }
+
+
 
 end.
 
