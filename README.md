@@ -1,11 +1,12 @@
-# redes-app
-# Aplicación destinada a gestión de la red local
+# Network App
+# Management application specially designed for the local network
 
-# Dispondremos de varias opciones diferentes como :
-# Obtener la IP pública.
-# Obtener la configuración local (IP local,nombre usuario,nombre equipo ).
-# Probar nuestra conexión a internet , o por ejemplo enviar un PING personalizado.
+# We can choose between many options:
+# Get public IP.
+# Get the local config (Local IP,Local username, workstation name).
+# Internet Connection Test.
+# Send a personalized PING.
 
 
-# Versión actualizada a 28/09/2015
-# Aplicación que esta siendo desarrollada mediante Lazarus
+# Updated version 28/09/2015
+# Application being developed by Lazarus
