@@ -7,7 +7,7 @@ object Form1: TForm1
   HorzScrollBar.Range = 601
   VertScrollBar.Page = 539
   VertScrollBar.Range = 539
-  BorderStyle = bsSizeToolWin
+  BorderStyle = bsToolWindow
   Caption = 'App redes'
   ClientHeight = 560
   ClientWidth = 630
@@ -19,6 +19,7 @@ object Form1: TForm1
     Top = 304
     Width = 190
     Caption = 'Ver configuración local'
+    OnClick = Button1Click
     TabOrder = 0
   end
   object Label1: TLabel
@@ -276,6 +277,7 @@ object Form1: TForm1
     Top = 304
     Width = 190
     Caption = 'Ver IP pública'
+    OnClick = Button2Click
     TabOrder = 1
   end
   object Button3: TButton
@@ -284,14 +286,17 @@ object Form1: TForm1
     Top = 400
     Width = 190
     Caption = 'Probar conexión a internet'
+    OnClick = Button3Click
     TabOrder = 2
   end
   object Label2: TLabel
+    Cursor = crHandPoint
     Left = 128
     Height = 35
     Top = 504
     Width = 415
     Caption = 'Contacto : appwebs1@gmail.com'
+    DragCursor = crDefault
     Font.CharSet = ANSI_CHARSET
     Font.Height = -24
     Font.Name = 'Sitka Small'
@@ -300,6 +305,7 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
+    OnClick = Label2Click
   end
   object Button4: TButton
     Left = 368
@@ -307,6 +313,7 @@ object Form1: TForm1
     Top = 400
     Width = 190
     Caption = 'PING personalizado'
+    OnClick = Button4Click
     TabOrder = 3
   end
 end
