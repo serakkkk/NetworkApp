@@ -3,6 +3,11 @@ object Form1: TForm1
   Height = 560
   Top = 152
   Width = 630
+  HorzScrollBar.Page = 601
+  HorzScrollBar.Range = 601
+  VertScrollBar.Page = 539
+  VertScrollBar.Range = 539
+  BorderStyle = bsToolWindow
   Caption = 'App redes'
   ClientHeight = 560
   ClientWidth = 630
@@ -13,7 +18,7 @@ object Form1: TForm1
     Height = 62
     Top = 304
     Width = 190
-    Caption = 'Button1'
+    Caption = 'Ver configuración local'
     TabOrder = 0
   end
   object Label1: TLabel
@@ -270,7 +275,7 @@ object Form1: TForm1
     Height = 62
     Top = 304
     Width = 190
-    Caption = 'Button2'
+    Caption = 'Ver IP pública'
     TabOrder = 1
   end
   object Button3: TButton
@@ -278,16 +283,8 @@ object Form1: TForm1
     Height = 62
     Top = 400
     Width = 190
-    Caption = 'Button3'
+    Caption = 'Probar conexión a internet'
     TabOrder = 2
-  end
-  object Button4: TButton
-    Left = 368
-    Height = 62
-    Top = 400
-    Width = 190
-    Caption = 'Button4'
-    TabOrder = 3
   end
   object Label2: TLabel
     Left = 128
@@ -303,5 +300,13 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
+  end
+  object Button4: TButton
+    Left = 368
+    Height = 62
+    Top = 400
+    Width = 190
+    Caption = 'PING personalizado'
+    TabOrder = 3
   end
 end
