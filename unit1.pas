@@ -117,9 +117,12 @@ end;
 /////////////////////////////////////////////////////////////
 
 
+
+
+////////////////////////////////////////////////////////////
 procedure TForm1.Label2Click(Sender: TObject);//Imagen soporte aplicación
 begin
-  showmessage('Aquí se programará el envio de un correo de soporte');
+     showmessage('Aquí se programará el envio de un correo de soporte');
 end;
 
 procedure TForm1.Button2Click(Sender: TObject); //Botón IP Pública
@@ -130,9 +133,9 @@ end;
 procedure TForm1.Button3Click(Sender: TObject);
 begin
          if HayInternet then
-    ShowMessage('Conectado a internet')
+         ShowMessage('Estas conectado a internet')
     else
-    ShowMessage('Desconectado de internet');
+    ShowMessage('Estas desconectado de internet');
 end;
 
 procedure TForm1.Button4Click(Sender: TObject);
