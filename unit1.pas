@@ -104,6 +104,19 @@ begin
 end;
 /////////////////////////////////////////////////////////////
 
+
+
+///////////Comprobar si hay internet///////////////////////
+function HayInternet: Boolean;
+var
+  Estado: Cardinal;
+begin
+  Estado := INTERNET_CONNECTION_MODEM or INTERNET_CONNECTION_LAN or INTERNET_CONNECTION_PROXY;
+  Result := InternetGetConnectedState(@Estado, 0);
+end;
+/////////////////////////////////////////////////////////////
+
+
 procedure TForm1.Label2Click(Sender: TObject);//Imagen soporte aplicación
 begin
   showmessage('Aquí se programará el envio de un correo de soporte');
@@ -116,7 +129,10 @@ end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
-     showmessage('Aquí se programará la comprobación de la conexión a internet');
+         if HayInternet then
+    ShowMessage('Conectado a internet')
+    else
+    ShowMessage('Desconectado de internet');
 end;
 
 procedure TForm1.Button4Click(Sender: TObject);
@@ -129,6 +145,7 @@ begin
     LeerNombrePC;
     IPLocal;
     LeerUsuarioWindows;
+
 end;
 
 end.
