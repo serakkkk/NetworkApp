@@ -24,7 +24,7 @@ type
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
+
     procedure Label2Click(Sender: TObject);
 
   private

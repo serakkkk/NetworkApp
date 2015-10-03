@@ -13,6 +13,7 @@ object Form2: TForm2
     Top = 272
     Width = 157
     Caption = 'Realizar'
+    OnClick = Button1Click
     TabOrder = 0
   end
   object Edit1: TEdit
@@ -42,7 +43,6 @@ object Form2: TForm2
     Height = 23
     Top = 200
     Width = 56
-    OnChange = Edit2Change
     TabOrder = 2
     Text = '1'
   end
@@ -62,12 +62,14 @@ object Form2: TForm2
     ParentFont = False
   end
   object UpDown1: TUpDown
-    Left = 192
-    Height = 41
-    Top = 192
+    Left = 176
+    Height = 23
+    Top = 200
     Width = 25
-    Min = 0
-    Position = 0
+    Associate = Edit2
+    Max = 32767
+    Min = 1
+    Position = 1
     TabOrder = 3
     Wrap = False
   end
@@ -77,6 +79,7 @@ object Form2: TForm2
     Top = 352
     Width = 267
     Caption = 'Guardar resultados en fichero y abrir al finalizar'
+    OnClick = CheckBox1Click
     TabOrder = 4
   end
 end
