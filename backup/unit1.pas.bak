@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  ExtCtrls,Windows, Messages, WinSock,  WinInet;
+  ExtCtrls,Windows, Messages, WinSock,  WinInet,Unit2;
 
 type
 
@@ -24,6 +24,7 @@ type
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure Label2Click(Sender: TObject);
 
   private
@@ -111,12 +112,13 @@ function HayInternet: Boolean;
 var
   Estado: Cardinal;
 begin
-  Estado := INTERNET_CONNECTION_MODEM or INTERNET_CONNECTION_LAN or INTERNET_CONNECTION_PROXY;
+  Estado := INTERNET_CONNECTION_MODEM;
   Result := InternetGetConnectedState(@Estado, 0);
 end;
 /////////////////////////////////////////////////////////////
 
 
+////////////////////////////////////////////////////////////
 procedure TForm1.Label2Click(Sender: TObject);//Imagen soporte aplicación
 begin
      showmessage('Aquí se programará el envio de un correo de soporte');
@@ -137,8 +139,11 @@ end;
 
 procedure TForm1.Button4Click(Sender: TObject);
 begin
-  showmessage('Aquí se programará la opción de generar un ping personalizado');
+  showmessage('A continuación podrás realizar un ping personalizado');
+  Form2.Show;
 end;
+
+
 
 procedure TForm1.Button1Click(Sender: TObject); //Botón configuración local
 begin
