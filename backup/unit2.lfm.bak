@@ -47,11 +47,11 @@ object Form2: TForm2
     Text = '1'
   end
   object Label2: TLabel
-    Left = 73
+    Left = 88
     Height = 23
     Top = 148
-    Width = 172
-    Caption = 'Numero de paquetes :'
+    Width = 147
+    Caption = 'Numero paquetes :'
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
     Font.Name = 'Comic Sans MS'
@@ -68,7 +68,7 @@ object Form2: TForm2
     Width = 25
     Associate = Edit2
     Max = 32767
-    Min = 0
+    Min = 1
     Position = 1
     TabOrder = 3
     Wrap = False

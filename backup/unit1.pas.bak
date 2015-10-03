@@ -139,7 +139,6 @@ end;
 
 procedure TForm1.Button4Click(Sender: TObject);
 begin
-  showmessage('A continuación podrás realizar un ping personalizado');
   Form2.Show;
 end;
 

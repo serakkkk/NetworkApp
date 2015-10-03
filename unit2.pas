@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  ComCtrls, LCLType;
+  ComCtrls, LCLType,ShellApi,Windows,crt;
 
 type
 
@@ -22,6 +22,7 @@ type
     UpDown1: TUpDown;
     procedure Button1Click(Sender: TObject);
     procedure CheckBox1Click(Sender: TObject);
+
 
   private
     { private declarations }
@@ -54,19 +55,35 @@ begin
 
 end;
 
+
+
 ////////////////////////////////////////////////////////////////////////////////
 
 ////////////Función ejecutar1/////////////////////////////
 function ejecutar1: string;
+var
+   ip: string;
+   paquetes: string;
 begin
-  showmessage('No esta marcado');
+  ip:=Form2.Edit1.Text;
+  paquetes:=Form2.Edit2.Text;
+
+  ShellExecute(0, 'open','cmd.exe',pchar('/k ping -n '+paquetes+' '+ip+''), nil, SW_SHOWNORMAL);
+  showmessage('Se ha ejecutado el ping correctamente');
 end;
 /////////////////////////////////////////////////////////////
 
 ////////////Función ejecutar2/////////////////////////////
 function ejecutar2: string;
+var
+   ip2: string;
+   paquetes2: string;
+
 begin
-  showmessage('Esta marcado');
+  ip2:=Form2.Edit1.Text;
+  paquetes2:=Form2.Edit2.Text;
+  ShellExecute(0, 'open','cmd.exe',pchar('/k ping -n '+paquetes2+' '+ip2+'> ./resumen_Ping.txt'), nil,0);
+  showmessage('Espere unos segundos mientras se ejecuta y guardamos los resultados');
 end;
 /////////////////////////////////////////////////////////////
 
