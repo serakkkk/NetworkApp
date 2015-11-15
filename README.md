@@ -1,5 +1,5 @@
 # Network App
-# Management application specially designed for the local network
+# Management application specially designed for the local network L
 
 # We can choose between many options:
 # Get public IP.
